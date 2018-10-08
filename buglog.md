@@ -17,6 +17,6 @@ audioread.NoBackendError
 ##### Fix
 ```
 ![](https://github.com/librosa/librosa/issues/390#issuecomment-359517517)
-Hi everyone, i had struggling the this error for long time but I've figured out what was the problem. Essentially you have to make sure that the ffmpeg library is available to python by publishing its location in the environment variables. To be sure its fine, open a new shell / cmd line window and type ffmpeg -version to see its details. If the result is seen as the installed version you can now run python to execute librosa calls.
+Hi everyone! I had struggled with this error for long time and I've figured out what was the problem is. Essentially, you have to make sure that the ffmpeg library is available to python by publishing its location in the environment variables. To be sure its fine, open a new shell / cmd line window and type ffmpeg -version to see its details. If the result is seen as the installed version you can now run python to execute librosa calls.
 Hope it helps.
 ```
